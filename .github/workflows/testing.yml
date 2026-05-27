@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: [3.14.0] 
+        python-version: [3.10] 
 
     steps:
       - run: echo "The job was automatically triggered by a ${{github.event_name }} event."
@@ -21,7 +21,6 @@ jobs:
       - run: echo "This job's status is ${{ job.status }}."
       - name: Install dependencies
         run: pip3 install --no-cache-dir -r requirements.txt
-      - name: Run experiment
       - name: Run Decision Tree
         run: python train.py
       - name: Run Kernel Ridge
