@@ -1,4 +1,4 @@
-name: ML Workflow
+name: GitHub Actions ML Workflow
 
 on:
   push:
@@ -6,7 +6,7 @@ on:
       - kernelridge
 
 jobs:
-  build:
+  Explore-GitHub-Actions:
 
     runs-on: ubuntu-latest
 
